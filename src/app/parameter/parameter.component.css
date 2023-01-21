@@ -1,0 +1,114 @@
+p,
+select,
+input {
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.top>*:nth-child(odd),
+.top>*:nth-child(odd) {
+    background-color: var(--colorOrange);
+    color: var(--font-color);
+}
+
+.top>*:nth-child(even),
+.top>*:nth-child(even) {
+    background-color: var(--colorJaune);
+    color: var(--colorOrange);
+}
+
+.top {
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top>div {
+    /* background-color: var(--colorOrange); */
+    padding-inline: 10px;
+    display: table;
+    text-align: center;
+    height: 2rem;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.top>p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.top>select {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    width: 75px;
+}
+
+select {
+    border: 1px solid var(--colorBleu);
+    text-align-last: center;
+}
+
+
+.mid {
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.mid>div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid>select {
+    margin: 10px 0;
+    height: 2rem;
+}
+
+.mid>*:nth-child(odd),
+.mid>*:nth-child(odd) {
+    background-color: var(--colorJaune);
+    color: var(--colorOrange);
+}
+
+.mid>*:nth-child(even),
+.mid>*:nth-child(even) {
+    background-color: var(--colorOrange);
+    color: var(--font-color);
+}
+
+.mid>*:nth-child(n) {
+    border-radius: var(--border-radius);
+}
+
+h1 {
+    margin: 0;
+}
+
+div {
+    margin: 0px;
+    height: 2rem;
+    border: solid 1px var(--colorBleu);
+}
+
+.bot {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+input {
+    background-color: var(--colorJaune);
+    height: 50px;
+    width: 100px;
+    color: var(--colorOrange);
+    border: solid 1px var(--colorBleu);
+    border-radius: 50% 0 0 50%;
+}

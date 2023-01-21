@@ -1,0 +1,90 @@
+/******* 1joueur *****************/
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorJaune);
+ }
+.lot {
+    width: 100%;
+     position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+ /*div joueur*/
+.joueur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin-top: 50px;
+}
+.avatar {
+  width: 50%;
+}
+
+ /*div resultat*/
+.resultat {
+   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.bravo {
+
+    font-size: 2rem ;
+}
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*div buttom*/
+.container_buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+button {
+    background-color: var(--colorVert);
+    height: 30px;
+    width: 90px;
+    margin-top: 50px;
+    gap: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out 2s;
+    
+}
+
+button:hover {
+background-color: var(--colorBleu);
+}
+
+
+
+/********** 2joueurs*************/
+/* .triangle {
+    border-top: 100vh solid var(--colorJaune);
+    border-right: 56vh solid var(--colorBleu);
+}  */
+
+/*3players*/
+/* .trapeze{
+    width:100%;
+	height:500%;
+	border:1px solid var(--colorOrange);
+	border-color:var(--colorJaune) transparent transparent var(--colorOrange);
+	border-width:100px;
+    
+} */
+
+
+
+
+/*4players*/
+
