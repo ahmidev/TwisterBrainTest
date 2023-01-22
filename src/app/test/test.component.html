@@ -1,7 +1,17 @@
-<button (click)="test(); test2()">tester</button>
+<button (click)="ngOnInit()">tester</button>
 
-<div class="toto" *ngFor="let rep of reponses ">
-     {{rep.question }}
-     {{rep.correct_answer }}
+<!-- <div class="toto" *ngFor="let quest of questions" >
+     {{quest.question }}
+     {{quest.correct_answer }}
     
-</div> 
+</div>  -->
+<h1 class="toto">{{questions[0].category}}</h1>
+<!-- <p class="toto">{{questions[0].category}}</p> -->
+<p class="toto">{{questions[0].question}}</p>
+<!-- <p class="toto">  <li>{{questions[0].correct_answer}}</li></p> -->
+
+<ul class="toto" *ngFor="let quest of questions[0].incorrect_answers">
+  
+    <li>{{quest}}</li>
+    
+</ul>

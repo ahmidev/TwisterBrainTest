@@ -15,6 +15,7 @@ import { ParameterComponent } from './parameter/parameter.component';
 import { PlayerComponent } from './player/player.component';
 import { WheelComponent } from './wheel/wheel.component';
 import { TestComponent } from './test/test.component';
+import { QuestionService } from './question.service';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,16 @@ import { TestComponent } from './test/test.component';
     ParameterComponent,
     PlayerComponent,
     WheelComponent,
-    TestComponent
+    TestComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
+ 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
