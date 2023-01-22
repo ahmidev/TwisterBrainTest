@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-final',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./final.component.css']
 })
 export class FinalComponent {
-
+  constructor(private router :Router){}
 }
