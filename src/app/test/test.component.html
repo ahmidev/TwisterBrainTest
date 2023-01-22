@@ -10,8 +10,8 @@
 <p class="toto">{{questions[0].question}}</p>
 <!-- <p class="toto">  <li>{{questions[0].correct_answer}}</li></p> -->
 
-<ul class="toto" *ngFor="let quest of questions[0].incorrect_answers">
+<ul class="toto" *ngFor="let rep of questions[0].incorrect_answers,let index">
   
-    <li>{{quest}}</li>
+    <li>{{rep}}</li>
     
 </ul>

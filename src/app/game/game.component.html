@@ -22,11 +22,11 @@
     <div class="question">
   
       <div class="theme">
-  <p>Géographie</p>
+  <p>{{questions[0].category}}</p>
       </div>
       <div class="question_title">
   
-        <p>Quelle est la capitale de la France ?</p>
+        <p>{{questions[0].question}}</p>
   
       </div>
   
@@ -38,16 +38,18 @@
   
     <div class="answers">
   
-      <div class="answer1_2">
-        <div class="answer1 box">Madrid</div>
-        <div class="answer2 box">Rome</div>
+      <div class="answer1_2" >
+        <div class="answer1 box">{{questions[0].incorrect_answers[0]}}</div>
+        <div class="answer2 box">{{questions[0].incorrect_answers[1]}}</div>
+        <div class="answer3 box">{{questions[0].incorrect_answers[2]}}</div>
+        <div class="answer4 box">{{questions[0].incorrect_answers[3]}}</div>
       </div>
-      <div class="answer3_4">
-        <div class="answer3 box">Paris</div>
-        <div class="answer4 box">Londres</div>
-      </div>
+      <!-- <div class="answer3_4">
+        <div class="answer3 box">{{rep}}</div>
+        <div class="answer4 box">{{rep}}</div>
+      </div> -->
     </div>
-  
+  <button (click)="ngOnInit()" class="btn">Jouer</button>
   
   
     <div class="jokers">

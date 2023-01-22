@@ -36,6 +36,8 @@ export class QuestionService implements OnInit {
   console.log(this.category.randomCategory(this.category.category));
   this.subscription = this.category.randomCategory(this.category.category).subscribe((questi:number)=>{
     this.cat = questi;})
+    console.log(this.cat);
+    
   this.httpService.get<Test>(this.urlApi).subscribe((data)=>{
       console.log(data.results)
        this.question =new BehaviorSubject( data.results);

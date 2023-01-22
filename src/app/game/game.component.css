@@ -63,8 +63,8 @@
     .theme{
       position: absolute;
       top: 0;
-      color: var(--colorBleu);
-      font-size: 1.3rem;
+      color:white;
+      font-size: 10px;
       left: calc(80vw - 75%);
       z-index: 2;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -86,6 +86,8 @@
     }
     .question_title p{
       display:flex;
+      font-size: 15px;
+      color: #c9c9c9;
     
     
     }
@@ -117,8 +119,10 @@
     .answer1_2{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 80vw;
       font-size: 1.2rem;
+      color: #c9c9c9;
     }
     
     .answer3_4{
@@ -145,6 +149,12 @@
     }
     .answer1_2 .box:nth-child(2){
     background-color: var(--colorJaune);
+    }
+    .answer1_2 .box:nth-child(3){
+    background-color: var(--colorJaune);
+    }
+    .answer1_2 .box:nth-child(4){
+    background-color: red;
     }
     .answer3_4 .box:nth-child(1){
     background-color: var(--colorJaune);
