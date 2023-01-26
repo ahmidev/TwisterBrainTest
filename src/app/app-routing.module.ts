@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: 'player', component:  PlayerComponent},
   {path: 'wheel', component:  WheelComponent},
   {path: 'game', component: GameComponent},
+  
   {path: 'final', component: FinalComponent},
   
 ];

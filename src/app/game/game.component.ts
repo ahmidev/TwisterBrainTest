@@ -21,7 +21,7 @@ export class GameComponent implements OnInit {
   public subscription?:Subscription;
 
 
- constructor(private questionService :QuestionService, private category:CategoryService){  this.subscription = this.questionService.question?.subscribe((questi:Question[])=>{
+ constructor(private questionService :QuestionService, private category:CategoryService){  this.subscription = this.questionService.question.subscribe((questi:Question[])=>{
   this.questions = questi;
  
 }) }

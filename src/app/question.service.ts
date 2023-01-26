@@ -22,7 +22,7 @@ export interface Question {
   providedIn: 'root'
 })
 export class QuestionService implements OnInit {
-  public question?:BehaviorSubject<Question[]> ;
+  public question:any;
   public bonneRep:any;
   public subscription?:Subscription;
   public cat:number=0;
@@ -33,6 +33,20 @@ export class QuestionService implements OnInit {
   }
 
  ngOnInit(): void {
+  // this.question = [{category: 'test',
+  //   type: 'test',
+  //   difficulty:'facile',
+  //   question:'quelle est la capitale de la France',
+  //   correct_answer:'Paris',
+  //   incorrect_answers:['madrid','berlin','bordeau'],
+  // },
+  // {category: 'test',
+  //   type: 'test',
+  //   difficulty:'facile',
+  //   question:'quelle est la capitale de la France',
+  //   correct_answer:'Paris',
+  //   incorrect_answers:['madrid','berlin','bordeau'],
+  // }]
   console.log(this.category.randomCategory(this.category.category));
   this.subscription = this.category.randomCategory(this.category.category).subscribe((questi:number)=>{
     this.cat = questi;})

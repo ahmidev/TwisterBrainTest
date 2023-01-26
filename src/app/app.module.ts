@@ -17,7 +17,6 @@ import { WheelComponent } from './wheel/wheel.component';
 import { TestComponent } from './test/test.component';
 import { QuestionService } from './question.service';
 import { ConfettiDirective } from './confetti.directive';
-import { ConfettiComponent } from './confetti/confetti.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { ConfettiComponent } from './confetti/confetti.component';
     WheelComponent,
     TestComponent,
     ConfettiDirective,
-    ConfettiComponent,
     
   ],
   imports: [
